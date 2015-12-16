@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/senha"
+        android:hint="Senha"
+        android:layout_marginBottom="69dp"
+        android:layout_above="@+id/btnEntrar"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login"
+        android:maxLength="10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/btnEntrar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="179dp"
+        android:layout_alignRight="@+id/senha"
+        android:layout_alignEnd="@+id/senha"
+        android:layout_alignLeft="@+id/senha"
+        android:layout_alignStart="@+id/senha" />
+
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper"
+        android:layout_alignRight="@+id/senha"
+        android:layout_alignEnd="@+id/senha" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/login"
+        android:hint="Login"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/senha"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
